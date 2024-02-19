@@ -2,6 +2,10 @@
 
 En cours
 1. fonctions trigo (Solène)
+   - retirer écriture "cos(x)" et remplacer par la valeur de cosx dans le calcul
+  - faire marcher boutons boîte à outils
+  - faire la même chose pour sin et tan
+  - faire la même chose pour arccos, arcsin, arctan
 2. racine carré
 
  
