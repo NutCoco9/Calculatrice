@@ -6,17 +6,6 @@ function val(resultat){
     form.fenetre.value = form.fenetre.value + resultat
 }
 
-/** 
-function cos(resultat){
-    var valeur = document.getElementById("cosid").innerHTML;
-    
-    valeur = valeur *Math.PI/180
-    cosid.value = Math.cos(valeur)
-    form.fenetre.value = form.fenetre.value + resultat
-}
-*/
-
-
 
 
 function cos(resultat) {
@@ -36,18 +25,22 @@ function calcule(){
     }else {
         const container = document.getElementById('fenetre').value;
 
-        if (container.includes('(')) {
+        if (container.includes('cos(')) {
             var txt= form.fenetre.value
             init = txt.indexOf('(');
             fin = txt.indexOf(')');
-            var x = txt.substr(init+1,fin-init-1)
+            var x = txt.substr(init+1,fin-init-1);
 
-            var y = eval(Math.cos(x))
-            console.log(y)
+            var vcos =  Math.cos(x*Math.PI/180).toFixed(2);
+            
+            let text = form.fenetre.value
+            let result = text.replace(`cos(${x})`, `${vcos}`)
+            form.fenetre.value = result
+
         }
-
-       /* form.fenetre.value = eval(form.fenetre.value);
-        info.innerText = ""*/
+        form.fenetre.value = 
+        form.fenetre.value = eval(form.fenetre.value);
+        info.innerText = ""
     }
 
 }
