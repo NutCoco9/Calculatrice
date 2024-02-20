@@ -22,6 +22,21 @@ function tan(resultat) {
 }
 
 
+function arcos(resultat) {
+    form.fenetre.value = Math.arccos(resultat*Math.PI/180).toFixed(2)
+}
+
+
+function arcsin(resultat) {
+    form.fenetre.value = Math.arcsin(resultat*Math.PI/180).toFixed(2)
+}
+
+
+function arctan(resultat) {
+    form.fenetre.value = Math.arctan(resultat*Math.PI/180).toFixed(2)
+}
+
+
 function sqrt(resultat) {
     form.fenetre.value = Math.sqrt(resultat).toFixed(2)
 }
