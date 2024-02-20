@@ -35,7 +35,8 @@ body {
     height: 60px;
     width: 100%;
     background: #120f1f;
-    box-shadow: inset -3px -3px 7px #221d3b,
+    box-shadow: 
+    inset -3px -3px 7px #221d3b,
                          inset 3px 3px 5px #00000070;
 
 }
@@ -49,7 +50,8 @@ body {
     text-align: right;
     border: none;
     outline: none;
-    box-shadow: inset -1px -1px 7px #221d3b,
+    box-shadow:
+    inset -1px -1px 7px #221d3b,
     inset 1px 1px 5px #00000070;
     font-weight: 500;
 
@@ -68,12 +70,14 @@ body {
     color: #f1f1f1;
     border: none;
     outline: none;
-    box-shadow:  -2px -2px 7px #221d3b,
+    box-shadow:
+    -2px -2px 7px #221d3b,
     2px 2px 5px #00000070;
     cursor: pointer;
 }
 .calculatrice input[type=button]:active{
-    box-shadow: inset -2px -2px 7px #221d3b,
+    box-shadow:
+    inset -2px -2px 7px #221d3b,
     inset 2px 2px 5px #00000070;
 
 }
@@ -106,13 +110,13 @@ body {
     
 }
 
-/**Boîte à outils ***/
+/** Boîte à outils ***/
 
 
 
 
 #funcvar{
-    background-color:aqua;
+    background-color: aqua;
     width: 250px;
     height: 300px;
     position: absolute;
@@ -122,28 +126,39 @@ body {
 }
 
 #funcvar h1{
-  /*  background-color: #eb9595;*/
-    position:absolute;
+  /*  background-color: #eb9595; */
+    position: absolute;
 }
 
 #funcvar2 {
     top: 30%;
-  /*  background-color: #d6cdf5;*/
-    position:absolute;
+  
+  /* background-color: #d6cdf5; */
+    position: absolute;
     left: 9%;
 }
 
 #trigo{
-    background-color:rgb(170, 164, 253);
+    text-align: center;
+    background-color: rgb(170, 164, 253);
     width: 250px;
     height: 300px;
     position: absolute;
     right: 20%;
     bottom: 20%;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #221d3b,
+                        3px 3px 5px #00000070;
+    
+}
+
+#trigo h1{
+    text-align: center;
+    color: purple;
 }
 
 #hist{
-    background-color:rgb(59, 228, 209);
+    background-color: rgb(59, 228, 209);
     width: 250px;
     height: 300px;
     position: absolute;
@@ -162,12 +177,15 @@ body {
     color: #f1f1f1;
     border: none;
     outline: none;
-    box-shadow:  -2px -2px 7px #221d3b,
+    box-shadow:
+    
+    -2px -2px 7px #221d3b,
     2px 2px 5px #00000070;
     cursor: pointer;
 }
 .outils input[type=button]:active{
-    box-shadow: inset -2px -2px 7px #221d3b,
+    box-shadow:
+    inset -2px -2px 7px #221d3b,
     inset 2px 2px 5px #00000070;
 
 }
@@ -175,11 +193,21 @@ body {
 
 
 #cos, #tan, #sin{
-    font-size: 20px;
+    font-size: 10px;
     width: 60px;
 }
 
 #arcos, #arcsin, #arctan {
-    font-size: 15px;
+    font-size: 20px;
+    width: 60px;
+}
+
+#sqrt {
+    font-size: 20px;
+    width: 60px;
+}
+
+#pi {
+    font-size: 20px;
     width: 60px;
 }
