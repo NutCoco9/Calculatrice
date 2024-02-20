@@ -7,12 +7,29 @@ function val(resultat){
 }
 
 
-
 function cos(resultat) {
     form.fenetre.value = Math.cos(resultat*Math.PI/180).toFixed(2)
 }
 
 
+function sin(resultat) {
+    form.fenetre.value = Math.sin(resultat*Math.PI/180).toFixed(2)
+}
+
+
+function tan(resultat) {
+    form.fenetre.value = Math.tan(resultat*Math.PI/180).toFixed(2)
+}
+
+
+function sqrt(resultat) {
+    form.fenetre.value = Math.sqrt(resultat).toFixed(2)
+}
+
+
+function pi() {
+    return Math.PI
+}
 
 function calcule(){
     if(form.fenetre.value == ""){
