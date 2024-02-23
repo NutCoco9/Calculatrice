@@ -8,11 +8,11 @@ En cours
 
 A faire
 
-1. grossissement des touches lors du survol de la souris
-2. historique des calculs
-3. ajuster le css en fonction de la taille de l'écran (optionnel)
+1. historique des calculs
+2. ajuster le css en fonction de la taille de l'écran (optionnel)
 
 
 Fait
 1. toolbox
 2. modifier css
+3. grossissement des touches lors du survol de la souris
