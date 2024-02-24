@@ -7,6 +7,7 @@ function val(resultat){
 }
 
 
+
 function cos(resultat) {
     form.fenetre.value = Math.cos(resultat*Math.PI/180).toFixed(2)
 }
@@ -54,7 +55,8 @@ function calcule(){
                 info.innerText = ""
             })
         }) 
-    }else {
+    }
+    else {
         const container = document.getElementById('fenetre').value;
 
         if (container.includes('cos(')) {
@@ -69,6 +71,9 @@ function calcule(){
             let result = text.replace(`cos(${x})`, `${vcos}`)
             form.fenetre.value = result
 
+        }
+        if (container.includes(',')) {
+            form.fenetre.value = container.replace(/,/g, '.');
         }
         form.fenetre.value = 
         form.fenetre.value = eval(form.fenetre.value);
