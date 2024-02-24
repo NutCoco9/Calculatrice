@@ -75,9 +75,15 @@ function calcule(){
         if (container.includes(',')) {
             form.fenetre.value = container.replace(/,/g, '.');
         }
+        if (container.includes('×')) {
+            form.fenetre.value = container.replace(/×/g, '*');
+        }
         let a=eval(form.fenetre.value);
         a=a.toString();
-        if(a.includes(".")){
+        if(a.includes("*")){
+            a=a.replace(/\*/g, '×');
+        }
+	if(a.includes(".")){
             a=a.replace(/\./g, ',');
         }
         form.fenetre.value = a;
