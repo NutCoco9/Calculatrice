@@ -33,7 +33,7 @@ body {
 .calculatrice .resultat {
     margin: 0px 0px;
     top: 20px;
-    height: 60px;
+    height: 70px;
     width: 100%;
     background: #120f1f;
     box-shadow: 
@@ -148,6 +148,7 @@ body {
     left: 9%;
 }
 
+
 #trigo{
     text-align: center;
     background-color: rgb(170, 164, 253);
@@ -168,15 +169,23 @@ body {
 }
 
 #hist{
+    text-align: center;
     background-color: rgb(59, 228, 209);
     width: 250px;
     height: 300px;
     position: absolute;
     right: 20%;
     bottom: 20%;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #221d3b,
+                        3px 3px 5px #00000070;
+    
 }
 
-
+#hist h1{
+    text-align: center;
+    color: purple;
+}
 
 .outils input[type=button]{
     height: 40px;
@@ -202,22 +211,22 @@ body {
 
 
 
-#cos, #tan, #sin{
+.outil #cos, #tan, #sin{
     font-size: 10px;
     width: 60px;
 }
 
-#arcos, #arcsin, #arctan {
+.outil #arcos, #arcsin, #arctan {
     font-size: 20px;
     width: 60px;
 }
 
-#sqrt {
+.outil #sqrt {
     font-size: 20px;
     width: 60px;
 }
 
-#pi {
+.outil #pi {
     font-size: 20px;
     width: 60px;
 }
