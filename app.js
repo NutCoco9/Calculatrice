@@ -3,9 +3,6 @@ const info = document.querySelector('.infos')
 const allBtns = document.querySelectorAll('input[type=button]')
 
 function val(resultat){
-    if (!isNaN(parseFloat(resultat)) && isFinite(resultat)) {
-    resultat = resultat.replace(/\./g, ',');
-    }
     form.fenetre.value = form.fenetre.value + resultat
 }
 
