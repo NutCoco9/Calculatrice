@@ -44,7 +44,8 @@ function sqrt(resultat) {
 
 
 function pi() {
-    return Math.PI
+    form.fenetre.value = form.fenetre.value + Math.PI
+    
 }
 
 function calcule(){
@@ -71,8 +72,65 @@ function calcule(){
             let result = text.replace(`cos(${x})`, `${vcos}`)
             form.fenetre.value = result
 
+        }  if (container.includes('sin(')){
+            var txt2= form.fenetre.value
+            init = txt2.indexOf('(');
+            fin = txt2.indexOf(')');
+            var x = txt2.substr(init+1,fin-init-1);
+
+            var vsin =  Math.sin(x*Math.PI/180).toFixed(2);
+            
+            let text2 = form.fenetre.value
+            let result = text2.replace(`sin(${x})`, `${vsin}`)
+            form.fenetre.value = result
+        }  if (container.includes('tan(')){
+            var txt3= form.fenetre.value
+            init = txt3.indexOf('(');
+            fin = txt3.indexOf(')');
+            var x = txt3.substr(init+1,fin-init-1);
+
+            var vtan =  Math.tan(x*Math.PI/180).toFixed(2);
+            
+            let text3 = form.fenetre.value
+            let result = text3.replace(`tan(${x})`, `${vtan}`)
+            form.fenetre.value = result
         }
-        if (container.includes(',')) {
+	if (container.includes('arccos(')) {
+            var txt= form.fenetre.value
+            init = txt.indexOf('(');
+            fin = txt.indexOf(')');
+            var x = txt.substr(init+1,fin-init-1);
+
+            var varccos =  Math.arccos(x*Math.PI/180).toFixed(2);
+            
+            let text = form.fenetre.value
+            let result = text.replace(`arccos(${x})`, `${varccos}`)
+            form.fenetre.value = result
+
+        }  if (container.includes('sin(')){
+            var txt2= form.fenetre.value
+            init = txt2.indexOf('(');
+            fin = txt2.indexOf(')');
+            var x = txt2.substr(init+1,fin-init-1);
+
+            var vsin =  Math.sin(x*Math.PI/180).toFixed(2);
+            
+            let text2 = form.fenetre.value
+            let result = text2.replace(`sin(${x})`, `${vsin}`)
+            form.fenetre.value = result
+        }  if (container.includes('tan(')){
+            var txt3= form.fenetre.value
+            init = txt3.indexOf('(');
+            fin = txt3.indexOf(')');
+            var x = txt3.substr(init+1,fin-init-1);
+
+            var vtan =  Math.tan(x*Math.PI/180).toFixed(2);
+            
+            let text3 = form.fenetre.value
+            let result = text3.replace(`tan(${x})`, `${vtan}`)
+            form.fenetre.value = result
+        }
+	if (container.includes(',')) {
             form.fenetre.value = container.replace(/,/g, '.');
         }
         if (container.includes('x')) {
