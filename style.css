@@ -165,9 +165,9 @@ body {
 
 
 
-.outil #cosv, #tanv, #sinv{
+.outil #cos, #tan, #sin{
     font-size: 10px;
-    width: 60px;
+    width: 80px;
 }
 
 .outil #arcos, #arcsin, #arctan {
