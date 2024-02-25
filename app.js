@@ -1,3 +1,5 @@
+let memoire = ""
+
 const info = document.querySelector('.infos')
 
 const allBtns = document.querySelectorAll('input[type=button]')
@@ -147,6 +149,7 @@ function calcule(){
 }
 
 function suppr(){
+    memoire = form.fenetre.value;
     form.fenetre.value = "";
 }
 
@@ -167,4 +170,8 @@ function histf(){
     funcvar.style = "visibility:hidden";
     trigo.style = "visibility:hidden";
     hist.style = "visibility:visible";
+}
+
+function historique(){
+    form.fenetre.value=memoire;
 }
