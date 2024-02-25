@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   
-    <title> Calculatrice</title>
+    <title> Calculatrice </title>
 </head>
 <body>
 
     
+
     <div class="calculatrice">
 
         <p class="infos"></p>
@@ -20,118 +21,87 @@
             </div>
             <div class="buttons">
                 <div class="row functions">
-                    <input type="button" value="func"  onclick="func()">
-                    <input type="button" value="trigo" onclick="trigof()">
-                    <input type="button" value="hist"  onclick="histf()">
+                    <input class="test" type="button" value="boite" onclick="trigof()">
+                    <input class="test" type="button" value="hist"  onclick="historique()">
                 </div>
                 <div class="row">
-                    <input type="button" value="7" name="v7" onclick="val(v7.value)">
-                    <input type="button" value="8" name="v8" onclick="val(v8.value)">
-                    <input type="button" value="9" name="v9" onclick="val(v9.value)">
-                    <input type="button" value="+" name="plus" onclick="val(plus.value)">
+                    <input class="teste" type="button" value="7" name="v7" onclick="val(v7.value)">
+                    <input class="teste" type="button" value="8" name="v8" onclick="val(v8.value)">
+                    <input class="teste" type="button" value="9" name="v9" onclick="val(v9.value)">
+                    <input class="teste" type="button" value="+" name="plus" onclick="val(plus.value)">
                 </div>
                 <div class="row">
-                    <input type="button" value="4" name="v4" onclick="val(v4.value)">
-                    <input type="button" value="5" name="v5" onclick="val(v5.value)">
-                    <input type="button" value="6" name="v6" onclick="val(v6.value)">
-                    <input type="button" value="-" name="moin" onclick="val(moin.value)">
+                    <input class="teste" type="button" value="4" name="v4" onclick="val(v4.value)">
+                    <input class="teste" type="button" value="5" name="v5" onclick="val(v5.value)">
+                    <input class="teste" type="button" value="6" name="v6" onclick="val(v6.value)">
+                    <input class="teste" type="button" value="-" name="moin" onclick="val(moin.value)">
                 </div>
                 <div class="row">
-                    <input type="button" value="1" name="v1" onclick="val(v1.value)">
-                    <input type="button" value="2" name="v2" onclick="val(v2.value)">
-                    <input type="button" value="3" name="v3" onclick="val(v3.value)">
-                    <input type="button" value="x" name="mult" onclick="val(mult.value)">
+                    <input class="teste" type="button" value="1" name="v1" onclick="val(v1.value)">
+                    <input class="teste" type="button" value="2" name="v2" onclick="val(v2.value)">
+                    <input class="teste" type="button" value="3" name="v3" onclick="val(v3.value)">
+                    <input class="teste" type="button" value="x" name="mult" onclick="val(mult.value)">
                 </div>
                 <div class="row">
-                   <input type="button" value="0" name="v0" onclick="val(v0.value)">
-                    
-                    <input type="button" value="."  name="dot" onclick="val(dot.value)">
-                    <input type="button" value="/" name="div" onclick="val(div.value)">
-                    <input type="button" value="=" name="egale" onclick="calcule()">
+                    <input class="teste" type="button" value="60" id="cosid" name="cosv" onclick="cos(cosv.value)">
+                    <input class="teste" type="button" value=","  name="dot" onclick="val(dot.value)">
+                    <input class="teste" type="button" value="/" name="div" onclick="val(div.value)">
+                    <input class="teste" type="button" value="=" name="egale" onclick="calcule()">
                 </div>
                 <div class="row">
-                    <input type="button" value="(" name="vbro" onclick="val(vbro.value)">
-                    <input type="button" value=")" name="vbrc" onclick="val(vbrc.value)">
-                    <input id="reset" type="button" value="Supp" name="egale" onclick="suppr()">
+                    <input class="teste" type="button" value="(" name="vbro" onclick="val(vbro.value)">
+                    <input class="teste" type="button" value=")" name="vbrc" onclick="val(vbrc.value)">
+                    <input class="teste" id="reset" type="button" value="Supp" name="egale" onclick="suppr()">
                 </div>
             </div>
         </form>
     </div>
     <div class="outils">
-        <div id="funcvar" style="visibility:hidden">
+	<div id="trigo" style="visibility:hidden">
             <h1>Boîte à outils</h1>
             <div id="funcvar2">   
                 <div class="row">
                     <input id="cosv" type="button" value="cos()"  name="cosv" onclick="val(cosv.value)">
                     <input id="sinv" type="button" value="sin()" name="sinv" onclick="val(sinv.value)">
-                    <input id="tan" type="button" value="tan()" name="tan" onclick="val(tan.value)">
-                    <input id="arcos" type="button" value="arcos()" name="arcos" onclick="val(arcos.value)">
+                    <input id="tanv" type="button" value="tan()" name="tanv" onclick="val(tanv.value)">
+                </div>
+		<div class="row">
+		    <input id="arcos" type="button" value="arccos()" name="arccos" onclick="val(arccos.value)">
                     <input id="arcsin" type="button" value="arcsin()" name="arcsin" onclick="val(arcsin.value)">
                     <input id="arctan" type="button" value="arctan()" name="arctan" onclick="val(arctan.value)">
                 </div>
                 
                 <div class="row">
-                    <input type="button" value="0" name="v0" onclick="val(v0.value)">
-                    <input type="button" value="." name="dot" onclick="val(dot.value)">
-                    <input type="button" value="/" name="div" onclick="val(div.value)">
-                    <input type="button" value="=" name="egale" onclick="calcule()">
-                </div>
-            </div>
-        </div>
-        <div id="trigo" style="visibility:hidden">
-            <h1>Boîte à outils</h1>
-            <div id="funcvar2">   
-                <div class="row">
-                    <input id="cos" type="button" value="cos()" name="cos" onclick="val(cos.value)">
-                    <input id="sin" type="button" value="sin()" name="sin" onclick="val(sin.value)">
-                    <input id="tan" type="button" value="tan()" name="tan" onclick="val(tan.value)">
-                    <input id="arcos" type="button" value="arcos()" name="arcos" onclick="val(arcos.value)">
-                    <input id="arcsin" type="button" value="arcsin()" name="arcsin" onclick="val(arcsin.value)">
                     <input id="arctan" type="button" value="arctan()" name="arctan" onclick="val(arctan.value)">
-                    <input class="sqrt" type="button" value="&#8730" name="sqrt" onclick="val(sqrt.value)">
-                    <input class="pi" type="button" value="&#960" name="pi" onclick="val(pi.value)">
-                </div>
-                <div class="row">
-                    <input type="button" value="1" name="v1" onclick="val(v1.value)">
-                    <input type="button" value="2" name="v2" onclick="val(v2.value)">
-                    <input type="button" value="3" name="v3" onclick="val(v3.value)">
-                    <input type="button" value="*" name="mult" onclick="val(mult.value)">
-                </div>
-                <div class="row">
-                    <input type="button" value="0" name="v0" onclick="val(v0.value)">
-                    <input type="button" value="." name="dot" onclick="val(dot.value)">
-                    <input type="button" value="/" name="div" onclick="val(div.value)">
-                    <input type="button" value="=" name="egale" onclick="calcule()">
+                    <input id="arctan" type="button" value="arctan()" name="arctan" onclick="val(arctan.value)">
                 </div>
             </div>
         </div>
-        <div id="hist" style="visibility:hidden">
+        <div id="funcvar" style="visibility:hidden">
             <h1>Boîte à outils</h1>
-            <div id="funcvar2">   
+            <div class="funcvar2">   
                 <div class="row">
-                    <input type="button" value="4" name="v4" onclick="val(v4.value)">
-                    <input type="button" value="5" name="v5" onclick="val(v5.value)">
-                    <input type="button" value="6" name="v6" onclick="val(v6.value)">
-                    <input type="button" value="-" name="moin" onclick="val(moin.value)">
-                </div>
-                <div class="row">
-                    <input type="button" value="1" name="v1" onclick="val(v1.value)">
-                    <input type="button" value="2" name="v2" onclick="val(v2.value)">
-                    <input type="button" value="3" name="v3" onclick="val(v3.value)">
-                    <input type="button" value="*" name="mult" onclick="val(mult.value)">
-                </div>
-                <div class="row">
-                    <input type="button" value="0" name="v0" onclick="val(v0.value)">
-                    <input type="button" value="." name="dot" onclick="val(dot.value)">
-                    <input type="button" value="/" name="div" onclick="val(div.value)">
-                    <input type="button" value="=" name="egale" onclick="calcule()">
+                    <input class="cosv" type="button" value="cos()"  name="cosv" onclick="val(cosv.value)">
+                    <input class="sinv" type="button" value="sin()" name="sinv" onclick="val(sinv.value)">
+                    <input class="tan" type="button" value="tan()" name="tan" onclick="val(tan.value)">
+                    <input class="arcos" type="button" value="arcos()" name="arcos" onclick="val(arcos.value)">
+                    <input class="arcsin" type="button" value="arcsin()" name="arcsin" onclick="val(arcsin.value)">
+                    <input class="arctan" type="button" value="arctan()" name="arctan" onclick="val(arctan.value)">
                 </div>
             </div>
         </div>
+        
+        <div id="hist" style="visibility:hidden">
+            <h1>Historique</h1>
+            <div class="funcvar2">   
+                <div class="row">
+                    <input type="button" value="4" name="v4" onclick="historique()">
+                </div>
+            </div>
+        </div> 
     </div>
 
 
     <script src="app.js"></script>
 </body>
-</html>    
-    
+</html>
