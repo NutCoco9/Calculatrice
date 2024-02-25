@@ -62,6 +62,19 @@ function calcule(){
     else {
         const container = document.getElementById('fenetre').value;
 
+	if (container.includes('sqrt(')) {
+            var txt= form.fenetre.value
+            init = txt.indexOf('(');
+            fin = txt.indexOf(')');
+            var x = txt.substr(init+1,fin-init-1);
+
+            var vsqrt =  Math.sqrt(x*Math.PI/180).toFixed(2);
+            
+            let text = form.fenetre.value
+            let result = text.replace(`sqrt(${x})`, `${vsqrt}`)
+            form.fenetre.value = result
+
+        }
         if (container.includes('cos(')) {
             var txt= form.fenetre.value
             init = txt.indexOf('(');
@@ -74,7 +87,8 @@ function calcule(){
             let result = text.replace(`cos(${x})`, `${vcos}`)
             form.fenetre.value = result
 
-        }  if (container.includes('sin(')){
+        }
+        if (container.includes('sin(')){
             var txt2= form.fenetre.value
             init = txt2.indexOf('(');
             fin = txt2.indexOf(')');
@@ -85,7 +99,8 @@ function calcule(){
             let text2 = form.fenetre.value
             let result = text2.replace(`sin(${x})`, `${vsin}`)
             form.fenetre.value = result
-        }  if (container.includes('tan(')){
+        }  
+	if (container.includes('tan(')){
             var txt3= form.fenetre.value
             init = txt3.indexOf('(');
             fin = txt3.indexOf(')');
@@ -109,18 +124,20 @@ function calcule(){
             let result = text.replace(`arccos(${x})`, `${varccos}`)
             form.fenetre.value = result
 
-        }  if (container.includes('sin(')){
+        }  
+	if (container.includes('arcsin(')){
             var txt2= form.fenetre.value
             init = txt2.indexOf('(');
             fin = txt2.indexOf(')');
             var x = txt2.substr(init+1,fin-init-1);
 
-            var vsin =  Math.sin(x*Math.PI/180).toFixed(2);
+            var varcsin =  Math.arcsin(x*Math.PI/180).toFixed(2);
             
             let text2 = form.fenetre.value
-            let result = text2.replace(`sin(${x})`, `${vsin}`)
+            let result = text2.replace(`arcsin(${x})`, `${varcsin}`)
             form.fenetre.value = result
-        }  if (container.includes('tan(')){
+        }  
+	if (container.includes('tan(')){
             var txt3= form.fenetre.value
             init = txt3.indexOf('(');
             fin = txt3.indexOf(')');
